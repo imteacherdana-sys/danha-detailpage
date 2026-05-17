@@ -1,0 +1,1371 @@
+{
+  "cosmetics": {
+    "name": "화장품",
+    "emoji": "💄",
+    "description": "피부 고민 공감 → 성분·임상 → Before/After → 사용법 → 인증 → 리뷰 구조. 신뢰와 결과가 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 피부 고민 공감",
+        "tags": [
+          "AIDA-A",
+          "PAS-P"
+        ],
+        "purpose": "타겟의 피부 고민을 1문장으로 직격. 거울 속 불만을 떠올리게 한다.",
+        "hook": "거울 볼 때마다 신경 쓰이던 {{keyword1}}, 이제 그만.",
+        "body": "아침마다 점점 깊어지는 {{keyword1}}\n화장으로도 가려지지 않는 {{keyword2}}\n{{prodName}}이(가) 그 고민의 끝을 만들어드립니다.",
+        "imgKo": "{{keyword1}} 고민이 느껴지는 동아시아 여성 클로즈업, 자연광, 소프트 포커스, 톤다운된 미니멀 배경, 에디토리얼 뷰티 사진",
+        "imgEn": "Close-up of an Asian woman's partial face showing {{keyword1}} concern, natural soft light, shallow depth of field, muted minimal background, editorial beauty photography",
+        "ratio": "1:1",
+        "slotType": "연출"
+      },
+      {
+        "id": "intro",
+        "name": "제품 소개",
+        "tags": [
+          "AIDA-I"
+        ],
+        "purpose": "핵심 한 줄 USP + 제품 원샷. 흐름상 바로 '해답'을 내놓는다.",
+        "hook": "{{prodName}} — {{keyword1}}을(를) 위한 단 하나의 해답.",
+        "body": "{{usp1}}\n{{usp2}}",
+        "imgKo": "{{prodName}} 제품 패키지 정면 원샷, 파스텔 그라데이션 배경, 상단 조명, 제품 주변 여백 여유롭게, 럭셔리 뷰티 프로덕트 포토",
+        "imgEn": "Front hero shot of {{prodName}} cosmetic bottle, pastel gradient background, top soft light, generous negative space around product, luxurious beauty product photography",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "ingredients",
+        "name": "핵심 성분 / 효능",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "성분을 '왜' 좋은지 기전과 함께. 텍스트만 말고 그래픽으로.",
+        "hook": "우리가 선택한 {{keyword2}}의 이유.",
+        "body": "{{usp1}}\n{{usp2}}\n{{usp3}}",
+        "imgKo": "핵심 성분 비주얼 인포그래픽, 천연 원료 추출물 컷(식물·꽃잎·물방울), 성분 아이콘 3개 배치, 파스텔 배경, 깨끗한 레이아웃",
+        "imgEn": "Key ingredient visual infographic, natural extracts (botanicals, petals, water droplets), 3 ingredient icons arranged, pastel background, clean editorial layout",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "clinical",
+        "name": "임상 / 시험 결과",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "수치로 신뢰 확보. 그래프 + 피험자 수 + 기관명.",
+        "hook": "피부과 임상 테스트 완료 — 숫자가 말합니다.",
+        "body": "{{keyword1}} 개선 +{{number1}}%\n피험자 {{number2}}명\n4주 사용 결과",
+        "imgKo": "임상 결과 비교 막대그래프, 전후 수치 두 개 막대, 깨끗한 차트 디자인, 파스텔 톤, 상단 피부 측정기 장비 일러스트, 임상 보고서 느낌",
+        "imgEn": "Clinical results bar chart, two bars before/after, clean chart design, pastel tone, top clinical device illustration, medical report aesthetic",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "beforeafter",
+        "name": "Before / After",
+        "tags": [
+          "PAS-S",
+          "AIDA-D"
+        ],
+        "purpose": "실제 사용자 사진으로 결과를 눈으로 확인.",
+        "hook": "{{number1}}주 후, 피부가 달라집니다.",
+        "body": "Before: {{keyword1}} 고민이 도드라진 상태\nAfter: {{keyword1}} 완화, 맑고 촉촉한 결",
+        "imgKo": "피부 Before/After 나란히 비교 샷, 한쪽은 {{keyword1}} 고민 드러남, 다른쪽은 매끄러운 피부, 동일한 조명과 각도, 클로즈업, 클리니컬 뷰티",
+        "imgEn": "Side-by-side skin before/after comparison, one side showing {{keyword1}} concern, other side clear smooth skin, same lighting and angle, close-up, clinical beauty",
+        "ratio": "16:9",
+        "slotType": "비교"
+      },
+      {
+        "id": "howto",
+        "name": "사용법 (4단계)",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "쉬운 단계로 사용 부담 제거.",
+        "hook": "하루 {{number1}}분, 4단계 루틴.",
+        "body": "STEP 1. 세안 후 토너\nSTEP 2. {{prodName}} 적량\nSTEP 3. 부드럽게 두드려 흡수\nSTEP 4. 다음 제품 사용",
+        "imgKo": "4단계 사용법 그리드 이미지, 각 단계 손 동작 컷 4개, 흰 배경, 클린 에디토리얼 스타일, 제품 함께 노출",
+        "imgEn": "4-step usage grid, each step with hand gesture shot, white background, clean editorial style, product visible in each step",
+        "ratio": "1:1",
+        "slotType": "연출"
+      },
+      {
+        "id": "texture",
+        "name": "텍스처 / 향",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "감각적 요소. 촉감/향을 시각으로.",
+        "hook": "손끝에서 녹는 듯한 텍스처.",
+        "body": "{{keyword2}}의 편안한 발림성\n끈적임 없는 산뜻한 마무리",
+        "imgKo": "제품 텍스처 클로즈업 스와치, 손등 또는 유리판 위 크림/세럼 방울이 떨어지는 모먼트, 부드러운 반사광, 슬로우 모션 느낌",
+        "imgEn": "Macro close-up of product texture swatch, cream/serum drop on back of hand or glass, soft reflection, slow-motion aesthetic",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "certs",
+        "name": "인증 / 안전성",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "피부자극테스트, 비건, 식약처 등 신뢰 마크.",
+        "hook": "안심하고 쓸 수 있는 이유.",
+        "body": "피부 저자극 테스트 완료\n비건 인증\n파라벤·실리콘 프리",
+        "imgKo": "인증 마크 6~9개 그리드, 각 원형 배지, 심플한 베이지 배경, 깨끗한 타이포그래피",
+        "imgEn": "Certification badges grid of 6-9 circular badges, clean beige background, minimal typography",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰",
+        "tags": [
+          "TRUST",
+          "AIDA-D"
+        ],
+        "purpose": "실사용자 멘트로 욕구 강화. 별점·숫자 함께.",
+        "hook": "이미 {{number2}}명이 달라짐을 경험했습니다.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "실사용자 3명 셀카/반셀카 컷 콜라주, 각 인물 웃는 얼굴, 자연광, 다양한 연령·피부톤, 아래 별점 오버레이",
+        "imgEn": "Collage of 3 real user selfies, smiling faces, natural light, diverse ages and skin tones, star rating overlay at bottom",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "fullingredients",
+        "name": "전성분",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "투명하게 공개. 스킵되어도 신뢰 요소.",
+        "hook": "숨길 것 없는 전성분 공개.",
+        "body": "정제수, 글리세린, ...(전체 나열)",
+        "imgKo": "전성분표 아트 디렉션, 미니멀 타이포 레이아웃, 성분 텍스트가 중앙 정렬로 작게, 베이지 배경",
+        "imgEn": "Full ingredients table art direction, minimal typography layout, centered small ingredient text, beige background",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성 / 옵션",
+        "tags": [],
+        "purpose": "용량/세트/증정품 명확히.",
+        "hook": "골라 담는 즐거움.",
+        "body": "단품 {{number1}}ml\n2+1 세트\n기초 4종 세트",
+        "imgKo": "제품 세트 오버헤드 플랫레이, 상품 3~4개 배열, 박스 함께, 파스텔 배경",
+        "imgEn": "Product set overhead flat-lay, 3-4 items arranged with box, pastel background",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택 (Action)",
+        "tags": [
+          "AIDA-A",
+          "ACTION"
+        ],
+        "purpose": "긴박감 + 혜택으로 클릭 유도.",
+        "hook": "지금 구매하면, 단 {{number1}}일 한정 혜택.",
+        "body": "첫구매 20% 할인 / 무료배송\n리뷰 작성 시 마스크팩 3매 증정\n{{number1}}일 후 혜택 종료",
+        "imgKo": "할인 배너 이미지, 한정판 느낌, 강조 색상 포인트, 타이머 요소 상단",
+        "imgEn": "Limited-time discount banner, urgency feel, accent color pop, timer element at top",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "fashion": {
+    "name": "패션잡화",
+    "emoji": "👜",
+    "description": "스타일링 룩북 → 디테일 → 소재 → 사이즈 → 착용샷 → 리뷰. 감도와 핏이 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 룩 제안",
+        "tags": [
+          "AIDA-A"
+        ],
+        "purpose": "첫 화면에 가장 잘 찍은 모델컷. 스타일이 말한다.",
+        "hook": "어떤 룩에도 어울리는 {{prodName}}.",
+        "body": "{{keyword1}} 감성\n{{keyword2}} 실루엣",
+        "imgKo": "{{prodName}} 착용 모델 풀샷, 자연광 거리 스냅, 도시 배경 흐릿, {{keyword1}} 분위기, 패션 에디토리얼",
+        "imgEn": "{{prodName}} worn by model, full-body shot, natural light street snap, blurred urban background, {{keyword1}} vibe, fashion editorial",
+        "ratio": "4:5",
+        "slotType": "연출"
+      },
+      {
+        "id": "styling",
+        "name": "스타일링 제안 (3룩)",
+        "tags": [
+          "AIDA-I",
+          "AIDA-D"
+        ],
+        "purpose": "같은 제품, 다른 룩 3가지.",
+        "hook": "하루를 바꾸는 3가지 스타일링.",
+        "body": "LOOK 1 · 데일리 캐주얼\nLOOK 2 · 오피스 시크\nLOOK 3 · 주말 무드",
+        "imgKo": "동일 모델이 {{prodName}}을 3가지 다른 룩으로 매치한 3분할 그리드, 각각 데일리/오피스/주말, 자연광, 패션 룩북",
+        "imgEn": "Triptych grid of same model wearing {{prodName}} in 3 different styles (daily/office/weekend), natural light, fashion lookbook",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "detail",
+        "name": "디테일 클로즈업",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "봉제/스티치/로고/부자재. 퀄리티의 증거.",
+        "hook": "숨어있는 곳까지, 섬세하게.",
+        "body": "{{usp1}}\n{{usp2}}",
+        "imgKo": "{{prodName}} 디테일 매크로 샷 4컷 그리드 (스티치/로고/지퍼/소재), 따뜻한 조명, 제품 전용 스튜디오 사진",
+        "imgEn": "{{prodName}} macro detail 4-shot grid (stitch/logo/zipper/material), warm lighting, dedicated product studio photography",
+        "ratio": "1:1",
+        "slotType": "제품"
+      },
+      {
+        "id": "material",
+        "name": "소재 / 내구성",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "천연가죽/메탈/원단 등 소재 스토리.",
+        "hook": "손에 닿는 순간 차이를 느낍니다.",
+        "body": "{{keyword2}}\n{{usp1}}",
+        "imgKo": "소재 근접 매크로, 섬유/가죽/메탈의 결이 뚜렷하게 드러나는 스튜디오 조명, 따뜻한 톤",
+        "imgEn": "Material macro close-up, fiber/leather/metal texture clearly visible, studio lighting, warm tone",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "size",
+        "name": "사이즈 / 수납 가이드",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "크기를 감으로 알게 — 손/폰/책과 비교.",
+        "hook": "이만큼 들어가요.",
+        "body": "가로 {{number1}}cm × 세로 {{number2}}cm\n스마트폰/지갑/노트북 수납 가능",
+        "imgKo": "{{prodName}} 옆에 스마트폰·지갑·파우치·텀블러 배치한 스케일 비교 오버헤드 플랫레이, 흰 배경",
+        "imgEn": "{{prodName}} next to smartphone, wallet, pouch, tumbler for scale comparison, overhead flat-lay, white background",
+        "ratio": "1:1",
+        "slotType": "비교"
+      },
+      {
+        "id": "wear",
+        "name": "착용샷 / 사이즈 가이드",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "키/체형 다양한 모델로.",
+        "hook": "신장별 착용 예시.",
+        "body": "165cm 모델 · 172cm 모델 실제 착용",
+        "imgKo": "다른 키의 모델 2명이 {{prodName}} 각자 착용한 나란히 샷, 심플 배경, 신장 표기 오버레이",
+        "imgEn": "Two models of different heights wearing {{prodName}} side by side, simple background, height label overlay",
+        "ratio": "4:5",
+        "slotType": "연출"
+      },
+      {
+        "id": "colors",
+        "name": "컬러 옵션",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "컬러별 개성을 빠르게 한눈에.",
+        "hook": "당신의 무드에 맞는 한 컬러.",
+        "body": "{{prodVariant}} 옵션",
+        "imgKo": "{{prodName}}의 모든 컬러 바리에이션 오버헤드 그리드, 균일한 조명, 컬러 이름 아래 작게 표기, 클린 배경",
+        "imgEn": "All color variations of {{prodName}} in overhead grid, uniform lighting, color name small label underneath, clean background",
+        "ratio": "1:1",
+        "slotType": "제품"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰",
+        "tags": [
+          "TRUST",
+          "AIDA-D"
+        ],
+        "purpose": "별점·사이즈·핏 위주 리얼리뷰.",
+        "hook": "실제 착용 후기로 확인해보세요.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "고객 실착 사진 3~4컷 콜라주, 폰카 느낌, 거울셀카/일상 컷, 별점 아이콘 오버레이",
+        "imgEn": "Collage of 3-4 real customer wearing photos, phone-camera feel, mirror selfie/daily moment, star icon overlay",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성",
+        "tags": [],
+        "purpose": "더스트백·박스·보증서 등 언박싱 요소.",
+        "hook": "구성품을 한눈에.",
+        "body": "본품 + 더스트백 + 보증서",
+        "imgKo": "{{prodName}} 언박싱 오버헤드 플랫레이, 박스·더스트백·보증서·카드 함께, 깔끔한 배치",
+        "imgEn": "{{prodName}} unboxing overhead flat-lay, box, dust bag, warranty card arranged neatly",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "선물포장·당일발송·추가 혜택.",
+        "hook": "오늘 주문하면, 내일 도착.",
+        "body": "무료 선물포장 / 당일발송 / 첫구매 10% 할인",
+        "imgKo": "고급스러운 선물포장 연출, 리본과 패키지, 따뜻한 조명, 감성 언박싱",
+        "imgEn": "Luxurious gift packaging scene, ribbon and package, warm lighting, emotional unboxing",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "household": {
+    "name": "생활용품",
+    "emoji": "🏠",
+    "description": "일상 불편 공감 → 기능 → 실사용 → 비교 → 리뷰. GIF/씬이 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 일상 불편 공감",
+        "tags": [
+          "AIDA-A",
+          "PAS-P"
+        ],
+        "purpose": "특정 불편 순간을 명중. Micro-Moments.",
+        "hook": "아직도 {{keyword1}}로 고생하세요?",
+        "body": "매번 반복되는 {{keyword1}}의 불편함\n{{prodName}}이(가) 한 번에 끝냅니다.",
+        "imgKo": "{{keyword1}}로 불편해하는 평범한 한국 주부/직장인의 일상 컷, 현실감 있는 거실/주방 배경, 은은한 공감 연출, 자연광",
+        "imgEn": "Everyday Korean person struggling with {{keyword1}}, realistic home/kitchen background, relatable sympathetic scene, natural light",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "intro",
+        "name": "제품 소개",
+        "tags": [
+          "AIDA-I"
+        ],
+        "purpose": "제품의 정체와 포지션을 한 컷에.",
+        "hook": "{{prodName}} — {{keyword1}}의 새로운 해답.",
+        "body": "{{usp1}}",
+        "imgKo": "{{prodName}} 제품 단독 원샷, 밝은 베이지 배경, 상단 부드러운 조명, 생활용품 스튜디오 포토",
+        "imgEn": "{{prodName}} solo hero shot, bright beige background, soft top light, home goods studio photography",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "features",
+        "name": "특장점 3가지",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "아이콘 3개 + 1줄 설명 공식.",
+        "hook": "{{prodName}}만의 3가지 이유.",
+        "body": "① {{usp1}}\n② {{usp2}}\n③ {{usp3}}",
+        "imgKo": "3가지 특장점 아이콘 + 설명 그리드, 각 아이콘 원형 프레임, 밝은 배경, 인포그래픽 스타일",
+        "imgEn": "3 key features icon + description grid, each icon in circular frame, bright background, infographic style",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "scenario",
+        "name": "실사용 시나리오 (GIF용)",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "사용 전-중-후 시퀀스.",
+        "hook": "이렇게 쉽게, 이렇게 빠르게.",
+        "body": "Step 1. 준비\nStep 2. 사용\nStep 3. 완료",
+        "imgKo": "{{prodName}} 사용하는 손 시퀀스 4컷, 실제 사용 현장, 자연광, GIF로 만들 수 있는 연속 컷",
+        "imgEn": "Sequence of 4 hand shots using {{prodName}}, real use environment, natural light, suitable for GIF",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "size",
+        "name": "사이즈 / 호환",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "실측과 호환성을 명확하게.",
+        "hook": "이 크기, 딱 맞아요.",
+        "body": "가로 {{number1}}cm × 세로 {{number2}}cm",
+        "imgKo": "{{prodName}} 사이즈를 손/A4용지와 비교한 스케일 컷, 흰 배경, 실측 라인 오버레이",
+        "imgEn": "{{prodName}} size comparison with hand/A4 paper, white background, measurement line overlay",
+        "ratio": "1:1",
+        "slotType": "비교"
+      },
+      {
+        "id": "comparison",
+        "name": "기존 vs {{prodName}} 비교",
+        "tags": [
+          "AIDA-D",
+          "PAS-S"
+        ],
+        "purpose": "표로 한 줄씩 극단 대비.",
+        "hook": "뭐가 다를까요?",
+        "body": "기존 제품: {{usp1_old}}\n{{prodName}}: {{usp1}}",
+        "imgKo": "전후 비교 이미지 좌우 분할, 왼쪽 기존 불편 상황 회색톤, 오른쪽 {{prodName}} 사용 밝은 톤, 대비 명확",
+        "imgEn": "Before/after comparison split left/right, left side old problem in grayscale, right side using {{prodName}} bright, clear contrast",
+        "ratio": "16:9",
+        "slotType": "비교"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "솔직 후기 3개.",
+        "hook": "이미 {{number2}}명이 인정한 편리함.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "실사용 고객 3명 일상 컷 콜라주, 폰카 느낌, 생활 배경",
+        "imgEn": "Collage of 3 real customer daily-use shots, phone camera feel, real home background",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성",
+        "tags": [],
+        "purpose": "본품 + 사은품 명확히.",
+        "hook": "이 가격에 이 구성?",
+        "body": "본품 × 1\n{{usp4}}",
+        "imgKo": "{{prodName}} 구성품 오버헤드 플랫레이, 본품·부속품·사은품 정돈, 흰 배경",
+        "imgEn": "{{prodName}} package components overhead flat-lay, main item, accessories, gift neatly arranged, white background",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "한정+수량 표시로 긴박감.",
+        "hook": "놓치면 후회! 단 {{number1}}개 한정.",
+        "body": "{{number1}}명 한정 20% 할인 + 무료배송\n리뷰 작성 시 추가 사은품",
+        "imgKo": "한정 수량 강조 배너, 레드·옐로우 포인트, 카운트다운 요소",
+        "imgEn": "Limited quantity banner, red-yellow accent, countdown element, urgent feel",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "food": {
+    "name": "식품",
+    "emoji": "🍱",
+    "description": "미각 자극 → 원재료 스토리 → 제조 → 인증 → 활용 → 리뷰. 감성과 안전이 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 식욕 자극",
+        "tags": [
+          "AIDA-A"
+        ],
+        "purpose": "한 입 베어 무는 순간을 포착.",
+        "hook": "한 번 맛보면 멈출 수 없는 {{prodName}}.",
+        "body": "{{keyword1}} 풍미\n{{keyword2}} 식감",
+        "imgKo": "{{prodName}} 먹기 직전의 플레이팅 클로즈업, 스팀/윤기가 돋보이는 조명, 우드 테이블, 자연광 오버헤드, 감성 푸드 포토",
+        "imgEn": "Close-up plating of {{prodName}} moment before eating, steam/glossy highlight, wooden table, natural overhead light, emotional food photography",
+        "ratio": "4:5",
+        "slotType": "연출"
+      },
+      {
+        "id": "story",
+        "name": "원재료 스토리 / 산지",
+        "tags": [
+          "AIDA-I",
+          "TRUST"
+        ],
+        "purpose": "재료의 출처로 신뢰 구축.",
+        "hook": "어디서, 어떤 재료로.",
+        "body": "{{keyword1}} 산지 직송\n계약 재배 농가에서 수확",
+        "imgKo": "원재료 산지 풍경, 농부 손에 들린 원재료 클로즈업, 자연광 황금빛, 다큐멘터리 푸드 저널리즘",
+        "imgEn": "Ingredient origin landscape, farmer's hand holding raw ingredient close-up, golden hour natural light, documentary food journalism",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "process",
+        "name": "제조 공정",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "단계별 정직한 제조.",
+        "hook": "{{number1}}단계, 타협 없이.",
+        "body": "STEP 1. 선별\nSTEP 2. 세척\nSTEP 3. 숙성\nSTEP 4. 포장",
+        "imgKo": "식품 제조 공정 4컷 그리드, 청결한 공장 내부/장인의 손, 밝은 조명, 위생 이미지",
+        "imgEn": "Food production process 4-shot grid, clean factory interior, artisan's hands, bright lighting, hygienic aesthetic",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "nutrition",
+        "name": "영양성분 / 칼로리",
+        "tags": [
+          "TRUST",
+          "AIDA-D"
+        ],
+        "purpose": "숫자로 안심.",
+        "hook": "숫자로 보는 {{prodName}}.",
+        "body": "1회 제공량 {{number1}}g\n열량 {{number2}}kcal\n단백질 {{number1}}g",
+        "imgKo": "영양성분표 인포그래픽, 원형 차트 + 키 수치 강조, 파스텔 백그라운드, 클린 디자인",
+        "imgEn": "Nutrition fact infographic, circular chart with key numbers highlighted, pastel background, clean design",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "taste",
+        "name": "맛 묘사 / 식감",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "표현력 있는 카피로 상상 유도.",
+        "hook": "한 입, 그리고 그 다음.",
+        "body": "{{keyword1}}의 깊은 풍미\n{{keyword2}}의 쫄깃한 식감\n입 안에서 퍼지는 여운",
+        "imgKo": "{{prodName}} 단면 클로즈업 매크로, 내부 결/층/입자 선명, 따뜻한 조명, 식감 강조",
+        "imgEn": "{{prodName}} cross-section macro close-up, internal texture/layers/grain clearly visible, warm light, texture emphasis",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "recipe",
+        "name": "활용 레시피",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "여러 상황에서의 응용.",
+        "hook": "이렇게도 드셔보세요.",
+        "body": "레시피 1. 간단 아침\n레시피 2. 한 그릇 요리\n레시피 3. 안주",
+        "imgKo": "{{prodName}} 활용 3가지 요리 플레이팅 그리드, 각각 다른 스타일링, 우드 테이블, 자연광",
+        "imgEn": "3-dish recipe grid using {{prodName}}, each with different styling, wooden table, natural light",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "certs",
+        "name": "HACCP / 인증",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "식품안전 인증을 마크로.",
+        "hook": "안심하고 드세요.",
+        "body": "HACCP 인증 / 유기농 인증 / 식약처 등록",
+        "imgKo": "식품 안전 인증 배지 6개 그리드, 깨끗한 배경, 신뢰감 있는 타이포그래피",
+        "imgEn": "Food safety certification 6-badge grid, clean background, trustworthy typography",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "맛/재구매 위주.",
+        "hook": "맛본 분들이 남긴 진심.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "고객이 {{prodName}} 먹는 순간 셀카 콜라주, 웃는 표정, 집/카페 배경",
+        "imgEn": "Collage of customers eating {{prodName}} selfies, smiling, home/cafe background",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성 / 용량",
+        "tags": [],
+        "purpose": "팩 수/용량/세트 명확히.",
+        "hook": "구성을 선택하세요.",
+        "body": "1팩 {{number1}}g\n3팩 세트\n10팩 벌크",
+        "imgKo": "{{prodName}} 용량별 옵션 3개 나란히, 흰 배경, 크기 비교 가능",
+        "imgEn": "{{prodName}} size options side by side, white background, size comparison possible",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "storage",
+        "name": "보관 / 유통기한",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "실용 정보.",
+        "hook": "바르게 보관하는 법.",
+        "body": "냉장 {{number1}}℃ 이하\n개봉 후 {{number2}}일 이내",
+        "imgKo": "냉장고에 {{prodName}} 넣은 컷 + 유통기한 라벨 클로즈업, 깔끔한 홈 주방",
+        "imgEn": "{{prodName}} in refrigerator shot + expiry label close-up, clean home kitchen",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "정기구독·첫구매 할인.",
+        "hook": "정기구독하면 {{number1}}% 할인.",
+        "body": "첫구매 15% / 정기구독 20%\n{{number1}}개 묶음 추가 할인",
+        "imgKo": "혜택 배너, 따뜻한 식품 톤, 할인율 강조",
+        "imgEn": "Benefit banner, warm food tone, discount rate emphasis",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "electronics": {
+    "name": "전자제품",
+    "emoji": "🔌",
+    "description": "기술 스펙 → 차별 기능 → 시나리오 → 인증 → 경쟁비교. 스펙과 신뢰가 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 기술 자극",
+        "tags": [
+          "AIDA-A"
+        ],
+        "purpose": "한 줄 슬로건 + 프로덕트 히어로.",
+        "hook": "{{prodName}} — {{keyword1}}의 다음 기준.",
+        "body": "{{usp1}}",
+        "imgKo": "{{prodName}} 히어로샷 3D 렌더링, 다크 그라데이션 배경, 극적인 조명, 프로덕트 포토",
+        "imgEn": "{{prodName}} hero shot 3D render, dark gradient background, dramatic lighting, premium product photography",
+        "ratio": "16:9",
+        "slotType": "제품"
+      },
+      {
+        "id": "spec",
+        "name": "핵심 스펙",
+        "tags": [
+          "AIDA-I",
+          "AIDA-D"
+        ],
+        "purpose": "숫자로 바로 우위를 보여줌.",
+        "hook": "숫자로 보는 성능.",
+        "body": "{{number1}}% 성능 향상\n{{number2}}시간 배터리\n{{number1}}Hz 주사율",
+        "imgKo": "스펙 인포그래픽, 큰 숫자 타이포 + 아이콘, 다크 배경, 테크 UI 스타일",
+        "imgEn": "Spec infographic, large number typography + icons, dark background, tech UI style",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "features",
+        "name": "차별 기능 3~5",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "특허/자사개발 포인트.",
+        "hook": "{{prodName}}에만 있는 기술.",
+        "body": "① {{usp1}}\n② {{usp2}}\n③ {{usp3}}",
+        "imgKo": "차별 기능 3개 아이콘+설명 그리드, 테크 UI 라인 요소, 다크 배경",
+        "imgEn": "3 differentiating features icon+description grid, tech UI line elements, dark background",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "scenario",
+        "name": "사용 시나리오",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "출근/홈/이동 등 맥락별.",
+        "hook": "이럴 때, {{prodName}}.",
+        "body": "출근길 / 사무실 / 운동 중 / 여행\n모든 순간에",
+        "imgKo": "{{prodName}}을 서로 다른 환경에서 사용하는 4분할 그리드, 자연광, 라이프스타일",
+        "imgEn": "4-grid of {{prodName}} used in different environments, natural light, lifestyle",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "compat",
+        "name": "호환성 / 연결",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "OS/기기/포트 호환 명확히.",
+        "hook": "어디에든 연결됩니다.",
+        "body": "iOS / Android / Windows / macOS\nBluetooth 5.{{number1}}",
+        "imgKo": "{{prodName}}과 여러 기기(폰/태블릿/노트북) 연결 일러스트 도식, 깔끔한 라인 그래픽",
+        "imgEn": "{{prodName}} connecting to multiple devices illustration diagram, clean line graphics",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "certs",
+        "name": "인증 / 안전",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "KC/전파/안전인증.",
+        "hook": "안전하게 쓸 수 있는 이유.",
+        "body": "KC 인증 / 전파 인증 / {{number1}}시간 내구 테스트",
+        "imgKo": "인증 마크 배지 그리드, 다크 배경, 테크 스타일",
+        "imgEn": "Certification badges grid, dark background, tech style",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "compare",
+        "name": "경쟁 스펙 비교",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "우리 vs 경쟁 표.",
+        "hook": "한눈에 비교.",
+        "body": "{{prodName}} vs 경쟁제품\n배터리 / 성능 / 가격 비교표",
+        "imgKo": "경쟁 스펙 비교표 그래픽, {{prodName}} 컬럼 강조 하이라이트, 다크 UI 테마",
+        "imgEn": "Competitive spec comparison table graphic, {{prodName}} column highlighted, dark UI theme",
+        "ratio": "16:9",
+        "slotType": "비교"
+      },
+      {
+        "id": "reviews",
+        "name": "전문가/사용자 리뷰",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "테크 유튜버·미디어·실사용자.",
+        "hook": "전문가가 먼저 인정했습니다.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "테크 리뷰어 인터뷰 스틸 + 사용 장면 콜라주, 스튜디오 조명",
+        "imgEn": "Tech reviewer interview still + usage scene collage, studio lighting",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "박스 구성품",
+        "tags": [],
+        "purpose": "본품/케이블/설명서 한 컷.",
+        "hook": "박스를 열면.",
+        "body": "본품 / 케이블 / 어댑터 / 설명서 / 보증서",
+        "imgKo": "{{prodName}} 언박싱 오버헤드 플랫레이, 박스 안 구성품 정렬, 다크/뉴트럴 배경",
+        "imgEn": "{{prodName}} unboxing overhead flat-lay, contents arranged, dark/neutral background",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "warranty",
+        "name": "AS / 보증",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "AS 기간·전화·챗.",
+        "hook": "사고 나도 걱정 없이.",
+        "body": "{{number1}}년 무상 AS\n평일 {{number2}}시간 내 응대",
+        "imgKo": "AS 센터 친절한 상담 장면, 따뜻한 조명",
+        "imgEn": "AS center friendly consultation scene, warm lighting",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "론칭할인·카드혜택.",
+        "hook": "런칭 한정 {{number1}}% 할인.",
+        "body": "런칭 15% / 카드 5% / 무이자 {{number1}}개월",
+        "imgKo": "런칭 할인 배너, 강렬한 컬러, 테크 모던",
+        "imgEn": "Launch discount banner, bold color, tech modern",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "kids": {
+    "name": "어린이용품",
+    "emoji": "🧸",
+    "description": "엄마 공감 → 안전성 → KC인증 → 연령별 → 엄마 후기. 안심이 최우선.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 엄마 공감",
+        "tags": [
+          "AIDA-A"
+        ],
+        "purpose": "걱정되는 포인트를 정확히 짚어준다.",
+        "hook": "혹시, 이런 고민 있으셨나요?",
+        "body": "아이 입에 닿는 것, 더 꼼꼼히 보고 싶으셨죠.\n{{prodName}}이(가) 엄마의 마음을 덜어드릴게요.",
+        "imgKo": "밝고 따뜻한 햇살 드는 거실에서 아이와 엄마의 편안한 순간, 파스텔 톤, 부드러운 포커스",
+        "imgEn": "Bright warm sunlit living room, peaceful moment between child and mother, pastel tone, soft focus",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "safety",
+        "name": "안전성 (무독성/무해)",
+        "tags": [
+          "TRUST",
+          "AIDA-D"
+        ],
+        "purpose": "소재/성분의 안전을 시각적으로.",
+        "hook": "입에 닿아도 안심하세요.",
+        "body": "BPA-Free / 프탈레이트-Free / 식품급 소재",
+        "imgKo": "안전 소재 아이콘 배지 4~6개 그리드, 파스텔 민트/연핑크 배경, 부드러운 일러스트",
+        "imgEn": "Safe material badges grid of 4-6 icons, pastel mint/pink background, soft illustration",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "certs",
+        "name": "KC 인증 / 공식 시험",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "국가 인증으로 확실히.",
+        "hook": "대한민국이 인정한 안전.",
+        "body": "KC 마크 / 유해물질 시험 통과 / 식약처 등재",
+        "imgKo": "KC 인증서 공식 문서 사진 + 테스트 랩 이미지, 깨끗한 배경",
+        "imgEn": "KC certification official document + test lab image, clean background",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "age",
+        "name": "연령별 사용 가이드",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "우리 아이 개월에 맞는지.",
+        "hook": "우리 아이에게 맞을까?",
+        "body": "0~6개월 / 7~12개월 / 12~24개월\n각각 사용법 가이드",
+        "imgKo": "연령대별 아기 사용 씬 3컷 콜라주, 밝고 부드러운 조명, 베이지 톤",
+        "imgEn": "Age-specific baby usage 3-shot collage, bright soft lighting, beige tone",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "develop",
+        "name": "발달 / 교육 효과",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "두뇌·감각 자극 포인트.",
+        "hook": "놀면서 자라게.",
+        "body": "{{usp1}} — 감각 자극\n{{usp2}} — 호기심 발달",
+        "imgKo": "아이가 {{prodName}}으로 놀며 집중하는 클로즈업, 자연광, 부드러운 톤",
+        "imgEn": "Child playing with {{prodName}} focused, close-up, natural light, soft tone",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "material",
+        "name": "소재 / 세척",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "위생/세척 편의성.",
+        "hook": "삶고, 끓이고, 안심.",
+        "body": "열탕 소독 가능 / 식기세척기 사용 가능\n항균 처리",
+        "imgKo": "제품 세척·소독 장면 2컷, 깨끗한 주방 배경, 청결 이미지",
+        "imgEn": "Product washing/sterilization 2 shots, clean kitchen background, hygienic imagery",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "reviews",
+        "name": "엄마들의 리뷰",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "실제 엄마 관점 후기.",
+        "hook": "먼저 써본 엄마들이 말합니다.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "엄마와 아기가 {{prodName}}과 함께 있는 행복한 순간 3컷 콜라주, 자연광 가정",
+        "imgEn": "Happy moments collage of mom and baby with {{prodName}}, natural home light",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성",
+        "tags": [],
+        "purpose": "본품+여분+파우치.",
+        "hook": "엄마를 위한 구성.",
+        "body": "본품 / 여분 / 수납 파우치 / 사용설명서",
+        "imgKo": "{{prodName}} 전체 구성품 오버헤드 플랫레이, 파스텔 배경, 엄마 감성",
+        "imgEn": "{{prodName}} all components overhead flat-lay, pastel background, mom aesthetic",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "산모·맘스쿠폰.",
+        "hook": "엄마를 위한 혜택.",
+        "body": "육아템 전용 10% 할인 / 선물포장 무료\n친구 추천 시 5천원 적립",
+        "imgKo": "혜택 배너, 파스텔 핑크/민트, 부드러운 일러스트",
+        "imgEn": "Benefit banner, pastel pink/mint, soft illustration",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "kitchen": {
+    "name": "주방용품",
+    "emoji": "🍳",
+    "description": "요리 장면 → 소재·코팅 → 세척 → 내구 → 리뷰. 요리 감성과 편의성이 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 요리 순간",
+        "tags": [
+          "AIDA-A"
+        ],
+        "purpose": "요리가 즐거워지는 장면.",
+        "hook": "요리가 달라집니다, {{prodName}}과 함께.",
+        "body": "{{keyword1}}\n{{keyword2}}",
+        "imgKo": "{{prodName}}으로 요리하는 손 오버헤드, 자연광 창가 주방, 원목, 김 오르는 팬, 푸드 스타일링",
+        "imgEn": "Overhead hand cooking with {{prodName}}, natural window light kitchen, wooden tones, steaming pan, food styling",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "problem",
+        "name": "기존 불편 공감",
+        "tags": [
+          "PAS-P"
+        ],
+        "purpose": "눌어붙음·무거움·세척 불편 등.",
+        "hook": "아직도 이런 주방 쓰세요?",
+        "body": "눌어붙어 버려지는 재료\n손목 아픈 무게\n닦아도 남는 얼룩",
+        "imgKo": "눌어붙은 팬 클로즈업, 현실적인 지친 주방 장면, 어두운 톤",
+        "imgEn": "Burnt stuck pan close-up, realistic tired kitchen scene, dark tone",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "material",
+        "name": "소재 / 코팅 기술",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "코팅·합금·인덕션 호환 등.",
+        "hook": "{{keyword2}}을 위한 기술.",
+        "body": "{{usp1}} 코팅\n{{usp2}} 합금\n인덕션 호환",
+        "imgKo": "팬 단면 또는 코팅층 레이어 인포그래픽, 테크 일러스트, 깨끗한 배경",
+        "imgEn": "Pan cross-section or coating layer infographic, tech illustration, clean background",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "cooking",
+        "name": "조리 시나리오",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "계란·스테이크·볶음 등 대표 요리.",
+        "hook": "이 한 팬이면 끝.",
+        "body": "계란 / 스테이크 / 볶음 / 찜\n한 팬으로 다 됩니다",
+        "imgKo": "동일 팬으로 4가지 다른 요리 만드는 그리드, 자연광, 요리 완성샷",
+        "imgEn": "Same pan cooking 4 different dishes grid, natural light, finished dish shots",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "wash",
+        "name": "세척 편의성",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "물만 뿌려도 씻겨나가는 장면.",
+        "hook": "물만 뿌려도 쓱.",
+        "body": "눌어붙음 Zero\n{{number1}}초면 세척 완료",
+        "imgKo": "팬에 물 흘리는 순간 오염이 사라지는 슬로우 모션, 깨끗한 싱크 배경",
+        "imgEn": "Slow-motion moment water washing away stains on pan, clean sink background",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "durability",
+        "name": "내구 테스트",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "긁힘·온도·낙하 테스트 영상.",
+        "hook": "{{number1}}만 번 긁어도.",
+        "body": "긁힘 테스트 / 고온 테스트 / 낙하 테스트\n모두 통과",
+        "imgKo": "내구성 테스트 실험실 장면, 테스트 장비, 화이트 랩 배경",
+        "imgEn": "Durability test laboratory scene, testing equipment, white lab background",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "certs",
+        "name": "식품 안전 인증",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "PFOA-free, 중금속 등.",
+        "hook": "입에 들어가는 음식, 안심하고.",
+        "body": "PFOA-Free / 중금속 불검출 / 식품 접촉 적합",
+        "imgKo": "인증 배지 그리드, 깨끗한 배경",
+        "imgEn": "Certification badges grid, clean background",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "size",
+        "name": "사이즈 가이드",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "24/28/30cm 선택 도움.",
+        "hook": "몇 cm가 맞을까?",
+        "body": "24cm 1~2인 / 28cm 3~4인 / 30cm 5인 이상",
+        "imgKo": "사이즈별 팬 나란히 비교 플랫레이, 흰 배경, 숫자 표시",
+        "imgEn": "Size-based pans side by side comparison flat-lay, white background, size labels",
+        "ratio": "1:1",
+        "slotType": "비교"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "요리 사진 + 멘트.",
+        "hook": "주방이 바뀌었다는 분들.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "고객이 만든 요리 3컷 + 팬 함께 콜라주, 자연광 가정 주방",
+        "imgEn": "Customer-made dish 3-shot + pan collage, natural home kitchen light",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성",
+        "tags": [],
+        "purpose": "세트 옵션 확실히.",
+        "hook": "세트로 알뜰하게.",
+        "body": "단품 / 2종 세트 / 5종 풀세트",
+        "imgKo": "팬 세트 구성 오버헤드 플랫레이, 우드 백그라운드",
+        "imgEn": "Pan set overhead flat-lay, wooden background",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "할인·사은품.",
+        "hook": "지금 사면 실리콘 주걱 증정.",
+        "body": "첫구매 15% / 5종 세트 20% / 실리콘 주걱 증정",
+        "imgKo": "증정품 함께 배치한 혜택 배너",
+        "imgEn": "Free gift arranged with benefit banner",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "detergent": {
+    "name": "세제",
+    "emoji": "🧴",
+    "description": "얼룩 Before/After → 성분 안전 → 사용법 → 비교 실험 → 환경 인증. 효과 입증이 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 얼룩 충격",
+        "tags": [
+          "AIDA-A",
+          "PAS-P"
+        ],
+        "purpose": "전/후 대비로 즉시 눈길.",
+        "hook": "이 얼룩, 진짜 지워져요.",
+        "body": "포기했던 {{keyword1}}까지\n단 {{number1}}분만에",
+        "imgKo": "천에 깊게 배인 얼룩 클로즈업, 현실적 조명, 절망적 느낌",
+        "imgEn": "Close-up of deep-set stain on fabric, realistic lighting, hopeless feel",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "beforeafter",
+        "name": "Before / After 실험",
+        "tags": [
+          "AIDA-D",
+          "PAS-S"
+        ],
+        "purpose": "같은 천·같은 얼룩·같은 조건.",
+        "hook": "같은 조건에서 확인해보세요.",
+        "body": "동일 얼룩 / 동일 시간 / 동일 천",
+        "imgKo": "얼룩 Before/After 좌우 분할 비교, 동일 조명, 천 클로즈업",
+        "imgEn": "Stain before/after left-right split, same lighting, fabric close-up",
+        "ratio": "16:9",
+        "slotType": "비교"
+      },
+      {
+        "id": "ingredients",
+        "name": "성분 안전성",
+        "tags": [
+          "TRUST",
+          "AIDA-D"
+        ],
+        "purpose": "친환경·피부·임산부.",
+        "hook": "강하되, 안전하게.",
+        "body": "EWG 그린 등급\n피부 자극 테스트 완료\n생분해성 95%",
+        "imgKo": "성분 인포그래픽, 식물 원료 일러스트, 파스텔 블루 배경, 클린 디자인",
+        "imgEn": "Ingredient infographic, plant-based illustration, pastel blue background, clean design",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "howto",
+        "name": "사용법 / 용량",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "캡 뚜껑 기준 몇 캡.",
+        "hook": "세탁기에 {{number1}}캡만.",
+        "body": "드럼: 1캡\n통돌이: 2캡\n섬유 유연제: 별도 불필요",
+        "imgKo": "세제 뚜껑에 붓는 순간 클로즈업, 파스텔 블루 배경, 투명 액체 강조",
+        "imgEn": "Close-up of detergent pouring into cap, pastel blue background, transparent liquid highlight",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "experiment",
+        "name": "비교 실험 (경쟁/기존)",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "자사 vs 경쟁 세제 동시 비교.",
+        "hook": "눈으로 확인하는 차이.",
+        "body": "{{prodName}} vs 기존 제품\n같은 양, 같은 얼룩, 다른 결과",
+        "imgKo": "나란히 놓인 두 천의 비교, 한쪽은 얼룩 남음 한쪽은 깨끗, 실험실 조명",
+        "imgEn": "Two fabrics side by side comparison, one with stain remaining one clean, lab lighting",
+        "ratio": "16:9",
+        "slotType": "비교"
+      },
+      {
+        "id": "certs",
+        "name": "친환경 / 피부 인증",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "Ecocert, 피부테스트 등.",
+        "hook": "민감한 피부에도 괜찮아요.",
+        "body": "피부 자극 테스트 완료\nEWG 그린 등급\n생분해성 95%",
+        "imgKo": "인증 마크 그리드, 파스텔 블루/그린 배경, 자연친화 이미지",
+        "imgEn": "Certification mark grid, pastel blue/green background, eco-friendly imagery",
+        "ratio": "16:9",
+        "slotType": "설명"
+      },
+      {
+        "id": "scent",
+        "name": "향 / 질감",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "세탁 후 남는 은은한 향.",
+        "hook": "세탁이 끝난 순간, 향기가 남습니다.",
+        "body": "은은한 {{keyword2}} 향\n잔향 {{number1}}시간 지속",
+        "imgKo": "갓 세탁한 옷의 냄새 맡는 여성 클로즈업, 자연광, 감성 연출",
+        "imgEn": "Close-up of woman smelling freshly washed clothes, natural light, emotional scene",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "얼룩 종류별 후기.",
+        "hook": "고민이 사라진 분들.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "고객의 깨끗해진 빨래 3컷 콜라주, 자연광 베란다/세탁실",
+        "imgEn": "3 customer clean laundry shots collage, natural balcony/laundry light",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "용량 옵션",
+        "tags": [],
+        "purpose": "용량별 선택지.",
+        "hook": "가족 수에 맞게.",
+        "body": "1L 1인 / 3L 2~3인 / 5L 대용량",
+        "imgKo": "용량별 세제 병 3개 나란히, 흰 배경, 사이즈 명확",
+        "imgEn": "3 detergent bottles of different sizes side by side, white background, clear sizing",
+        "ratio": "1:1",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "정기배송·묶음.",
+        "hook": "정기배송으로 {{number1}}% 더.",
+        "body": "첫구매 15% / 정기배송 20% / 3+1 이벤트",
+        "imgKo": "정기배송 캘린더 일러스트 + 혜택 배너",
+        "imgEn": "Subscription calendar illustration + benefit banner",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  },
+  "apparel": {
+    "name": "의류",
+    "emoji": "👕",
+    "description": "룩북 → 원단 → 핏/사이즈 → 착용샷 → 세탁법. 핏과 감도가 핵심.",
+    "sections": [
+      {
+        "id": "hook",
+        "name": "후킹 / 룩북",
+        "tags": [
+          "AIDA-A"
+        ],
+        "purpose": "가장 잘 나온 모델컷 원샷.",
+        "hook": "올 시즌, 이 한 벌.",
+        "body": "{{keyword1}} 무드\n{{keyword2}} 핏",
+        "imgKo": "{{prodName}} 착용 모델 풀샷, 자연광 스튜디오 또는 도시 거리, 패션지 에디토리얼",
+        "imgEn": "{{prodName}} worn by model full shot, natural light studio or urban street, fashion editorial",
+        "ratio": "4:5",
+        "slotType": "연출"
+      },
+      {
+        "id": "styling",
+        "name": "스타일링 제안 (3룩)",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "같은 상의, 다른 매치.",
+        "hook": "하나로 세 가지 무드.",
+        "body": "LOOK 1 · 미니멀\nLOOK 2 · 스트릿\nLOOK 3 · 시크",
+        "imgKo": "동일 {{prodName}}을 3가지 다른 룩으로 매치한 모델 그리드, 패션 룩북",
+        "imgEn": "Same {{prodName}} styled 3 different ways, model grid, fashion lookbook",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "fabric",
+        "name": "원단 / 디테일",
+        "tags": [
+          "AIDA-D",
+          "TRUST"
+        ],
+        "purpose": "소재·봉제·스티치.",
+        "hook": "보이지 않는 정성.",
+        "body": "{{usp1}} 원단\n{{usp2}} 봉제",
+        "imgKo": "원단 매크로 클로즈업 + 봉제/스티치 디테일 4컷 그리드, 따뜻한 스튜디오 조명",
+        "imgEn": "Fabric macro close-up + stitching detail 4-shot grid, warm studio lighting",
+        "ratio": "1:1",
+        "slotType": "제품"
+      },
+      {
+        "id": "size",
+        "name": "사이즈 가이드 / 핏 차트",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "체형별 권장 사이즈.",
+        "hook": "내 사이즈, 한눈에.",
+        "body": "S / M / L / XL\n어깨 / 가슴 / 총장 / 소매",
+        "imgKo": "사이즈 차트 테이블 그래픽 + 마네킹 일러스트, 깔끔한 에디토리얼",
+        "imgEn": "Size chart table graphic + mannequin illustration, clean editorial",
+        "ratio": "4:5",
+        "slotType": "설명"
+      },
+      {
+        "id": "colors",
+        "name": "컬러 옵션",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "컬러별 무드.",
+        "hook": "당신의 오늘에 맞는 컬러.",
+        "body": "{{prodVariant}} 옵션",
+        "imgKo": "모든 컬러 옵션의 {{prodName}} 나란히 그리드, 균일한 조명, 깔끔한 배경",
+        "imgEn": "All color options of {{prodName}} side-by-side grid, uniform lighting, clean background",
+        "ratio": "16:9",
+        "slotType": "제품"
+      },
+      {
+        "id": "wear",
+        "name": "모델 착용샷 (키별)",
+        "tags": [
+          "AIDA-D"
+        ],
+        "purpose": "신장별 핏 감을 알게.",
+        "hook": "내 키에 어떻게 떨어질까.",
+        "body": "165cm / 172cm / 178cm 모델 착용",
+        "imgKo": "세 명의 다른 키 모델이 {{prodName}}을 각자 착용, 나란히 비교, 심플 배경, 신장 라벨",
+        "imgEn": "Three models of different heights wearing {{prodName}} side by side, simple background, height label",
+        "ratio": "4:5",
+        "slotType": "연출"
+      },
+      {
+        "id": "wash",
+        "name": "세탁 가이드",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "오래 입는 법.",
+        "hook": "오래 입으려면.",
+        "body": "찬물 손세탁 권장\n표백제 금지\n건조기 X",
+        "imgKo": "세탁 케어 라벨 클로즈업 + 세탁 아이콘 일러스트, 깨끗한 배경",
+        "imgEn": "Care label close-up + washing icon illustration, clean background",
+        "ratio": "1:1",
+        "slotType": "설명"
+      },
+      {
+        "id": "reviews",
+        "name": "고객 리뷰 (핏 중심)",
+        "tags": [
+          "TRUST"
+        ],
+        "purpose": "체형·키·사이즈 위주.",
+        "hook": "실제 착용하신 분들의 핏 후기.",
+        "body": "{{reviewQuote1}}\n{{reviewQuote2}}\n{{reviewQuote3}}",
+        "imgKo": "실제 고객 착용 사진 3~4컷 콜라주, 거울셀카/일상",
+        "imgEn": "3-4 real customer wearing shots collage, mirror selfie/daily life",
+        "ratio": "16:9",
+        "slotType": "연출"
+      },
+      {
+        "id": "composition",
+        "name": "상품 구성",
+        "tags": [],
+        "purpose": "원피스 단품·세트 등.",
+        "hook": "구성품을 한눈에.",
+        "body": "본품 / 택 / 보증서",
+        "imgKo": "{{prodName}} 상품 패키지 언박싱 플랫레이, 따뜻한 배경",
+        "imgEn": "{{prodName}} product package unboxing flat-lay, warm background",
+        "ratio": "4:5",
+        "slotType": "제품"
+      },
+      {
+        "id": "benefits",
+        "name": "구매 혜택",
+        "tags": [
+          "ACTION"
+        ],
+        "purpose": "사이즈 교환·당일발송.",
+        "hook": "교환 걱정 없이.",
+        "body": "사이즈 무료 교환 / 당일 발송 / 첫구매 10%",
+        "imgKo": "선물포장 + 무료교환 일러스트 배너, 따뜻한 톤",
+        "imgEn": "Gift packaging + free exchange illustration banner, warm tone",
+        "ratio": "16:9",
+        "slotType": "설명"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated outputs (사용자가 직접 만든 결과물 — 깃에 넣을 필요 없음)
+output/
+generated/
+plan.json
+reviews.json
+*.png
+*.jpg
+*.jpeg
+*.webp
+!examples/**/*.png
+!examples/**/*.jpg
+
+# Final detail page outputs
+상세페이지_*.html
+*_기획서.html
+
+# Logs
+*.log
