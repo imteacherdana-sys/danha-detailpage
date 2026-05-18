@@ -1,0 +1,72 @@
+# 단아쌤 한국형 상세페이지 스킬 — 병렬 이미지 생성 설정
+# 📦 https://shoppingmallschool.com
+
+worker:
+  name: cut-image-generator
+  description: |
+    한 컷의 상세페이지 이미지를 생성하는 worker.
+    각 worker는 독립적으로 실행되며, 호스트 에이전트가 STEP 7에서 컷마다
+    worker를 spawn한다. 자세한 패턴은 references/parallel-image-generation.md 참조.
+
+  inputs:
+    - cut_id: "컷 식별자 (예: section-01)"
+    - cut_name: "사람이 읽는 섹션 이름"
+    - prompt: "이미지 생성 프롬프트 (한글 또는 영문)"
+    - reference_image: "제품 사진 경로 (있으면 외관 보존 모드)"
+    - preserve_product: "외관 보존 여부 (true 권장)"
+    - ratio: "이미지 비율 (1:1, 4:5, 3:4, 16:9, 9:16)"
+    - text_overlay: "이미지에 박을 짧은 한글 카피 (8~15자, 선택)"
+    - output_path: "출력 PNG 절대 경로"
+
+  tool:
+    primary: "host-native-image-generation"   # Codex: 내장 도구
+    fallback: "scripts/generate_image.py"      # Claude Code 등 다른 환경
+
+  guidelines:
+    - "제품 사진이 reference로 주어지면 항상 포함"
+    - "외관(색·로고·형태·재질) 절대 변경 금지"
+    - "한글 텍스트는 8~15자 짧은 후킹만 이미지에 포함"
+    - "본문은 HTML 텍스트로 분리 (이미지에 박지 않음)"
+    - "실패 시 1회 재시도, 그래도 실패면 fail 표시"
+
+orchestration:
+  pattern: max-parallel
+  max_concurrent: 12          # 한 응답 안에서 최대 12개 동시 launch
+  retry_attempts: 1            # 실패한 컷만 1회 재시도
+  retry_strategy: stricter-prompt  # 재시도 시 프롬프트 단순화·텍스트 줄이기
+
+  workflow:
+    - step: "approved plan에서 컷 목록 추출"
+    - step: "각 컷마다 worker 인스턴스 생성"
+    - step: "max_concurrent 만큼 동시 launch (한 응답에 묶어서 발행)"
+    - step: "모든 worker 완료까지 대기 (개별 대기 X)"
+    - step: "QA 패스: 파일 존재·크기·비율·텍스트 검증"
+    - step: "실패한 컷만 모아서 두 번째 병렬 배치 launch"
+    - step: "최종 HTML 갤러리 빌드 (scripts/build_gallery.py)"
+
+  anti_patterns:
+    - "❌ 컷 1 launch → 결과 대기 → 컷 2 launch → 대기 (순차 실행)"
+    - "❌ 도구 호출을 응답마다 나눠서 발행 (병렬 효과 사라짐)"
+    - "❌ 한 worker 실패 시 전체 중단 (다른 worker는 계속)"
+    - "❌ 12장을 한 장으로 합쳐 출력 (사용자가 명시 요청하지 않은 경우)"
+
+qa:
+  required_checks:
+    - file_exists: "PNG 파일이 output_path에 생성됨"
+    - file_size_min_kb: 50
+    - format_valid: "Pillow로 열 수 있는 정상 PNG"
+    - ratio_match: "요청 비율과 ±5% 일치"
+    - korean_text_readable: "이미지에 박힌 한글이 가독 (텍스트 있는 컷만)"
+    - product_consistency: "reference 사진과 외관 일치 (reference 있는 경우)"
+
+  failure_actions:
+    file_missing: "재실행"
+    file_too_small: "재실행"
+    korean_text_broken: "프롬프트 단순화 후 재실행"
+    product_drift: "reference 강조 지시 추가 후 재실행"
+
+output:
+  gallery_html: "이미지_갤러리.html"
+  zip_archive: "이미지_전체.zip"
+  per_cut_files: "section-XX.png (zero-padded)"
+  metadata: "plan.json"
