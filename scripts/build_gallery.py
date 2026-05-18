@@ -77,7 +77,6 @@ def render_card(idx: int, item: dict, images_dir: Path, out_dir: Path) -> str:
     name = html.escape(item.get("name", f"섹션 {idx}"))
     ratio = html.escape(item.get("ratio", ""))
     slot = html.escape(item.get("slotType", ""))
-    tags = " ".join(f'<span class="tag">{html.escape(t)}</span>' for t in item.get("tags", []))
     status = render_status_badge(item)
 
     if item["_exists"]:
@@ -106,7 +105,6 @@ def render_card(idx: int, item: dict, images_dir: Path, out_dir: Path) -> str:
       <div class="visual">{img_html}</div>
       <div class="meta">
         <span class="ratio">{ratio} · {slot}</span>
-        <span class="tags">{tags}</span>
       </div>
       <footer>{download_btn}</footer>
     </article>
@@ -141,7 +139,6 @@ HTML_SHELL = """<!doctype html>
   .img-missing {{ display:flex; align-items:center; justify-content:center; height:100%; color:#666; font-size:12px; }}
   .meta {{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 12px; font-size: 11px; }}
   .ratio {{ color:#888; }}
-  .tag {{ background:#1f1f24; color:#a78bfa; padding: 2px 8px; border-radius: 10px; }}
   .badge {{ font-size: 11px; padding: 3px 8px; border-radius: 10px; white-space: nowrap; }}
   .badge-ok {{ background:#1f3a2e; color: #4ade80; }}
   .badge-warn {{ background:#3a2f1f; color: #fbbf24; }}

@@ -52,28 +52,11 @@ import sys
 from pathlib import Path
 
 
-TAG_BADGE = {
-    "AIDA-A": "🎯 Attention",
-    "AIDA-I": "💡 Interest",
-    "AIDA-D": "🔥 Desire",
-    "PAS-P":  "⚠️ Problem",
-    "PAS-S":  "✓ Solution",
-    "TRUST":  "🛡 Trust",
-    "ACTION": "🛒 Action",
-}
-
-
 def img_to_data_uri(path: Path) -> str:
     if not path.exists():
         return ""
     mime = "image/png" if path.suffix.lower() == ".png" else "image/jpeg"
     return f"data:{mime};base64," + base64.b64encode(path.read_bytes()).decode()
-
-
-def render_tags(tags: list[str]) -> str:
-    return " ".join(
-        f'<span class="tag">{TAG_BADGE.get(t, t)}</span>' for t in (tags or [])
-    )
 
 
 def render_section(idx: int, sec: dict, plan_dir: Path) -> str:
@@ -97,7 +80,6 @@ def render_section(idx: int, sec: dict, plan_dir: Path) -> str:
       <header class="section-head">
         <span class="num">{idx:02d}</span>
         <h2>{html.escape(sec.get("name", ""))}</h2>
-        <div class="tags">{render_tags(sec.get("tags", []))}</div>
         <span class="ratio">{html.escape(sec.get("ratio", ""))} · {html.escape(sec.get("slotType", ""))}</span>
       </header>
       <div class="grid">
@@ -132,7 +114,6 @@ HTML_SHELL = """<!doctype html>
   .section-head {{ display:flex; align-items:center; gap:12px; margin-bottom: 16px; flex-wrap: wrap; }}
   .section-head .num {{ background:#6c5ce7; color:#fff; width:36px; height:36px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; }}
   .section-head h2 {{ margin:0; font-size: 20px; flex: 1 0 auto; }}
-  .tags .tag {{ font-size: 11px; background:#f0eaff; color:#6c5ce7; padding: 3px 8px; border-radius: 10px; margin-right: 4px; white-space: nowrap; }}
   .ratio {{ font-size: 12px; color:#888; }}
   .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }}
   .copy .hook {{ font-size: 22px; font-weight: 700; margin: 0 0 14px; color:#2d2d2d; line-height: 1.35; }}

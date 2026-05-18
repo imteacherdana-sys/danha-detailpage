@@ -41,6 +41,7 @@ description: Use when the user wants to make, plan, write, or generate a Korean-
 6. **추상 명사 금지** — "혁신적" ❌ → "3배 빠른" ✅
 7. **사실 날조 금지** — 가짜 인증·후기·가격·랭킹·효능 절대 X
 8. **컴플라이언스 자동 체크** — 카테고리별 규정. 자세히는 `references/category-compliance.md`
+9. **AIDA/PAS/TRUST/ACTION 태그는 사용자 출력물에 절대 표시 금지** — 내부 JSON 메타데이터로만 사용. 채팅 응답 마크다운·HTML 기획서·갤러리·새로 만드는 어떤 HTML에도 배지/라벨로 노출하지 말 것. 자세히는 `references/output-format.md` 의 "표시 금지" 섹션.
 
 ## 호스트 환경별 동작
 
@@ -141,7 +142,7 @@ python scripts/build_gallery.py --plan plan.json --images-dir output --out outpu
 
 - [ ] 카테고리·보이스톤·프레임워크가 사용자 확인 거침
 - [ ] 모든 섹션에 hook/body 둘 다 채워졌음 (빈칸 없음)
-- [ ] 각 섹션에 AIDA/PAS 태그 명시
+- [ ] AIDA/PAS 태그는 JSON 데이터에만 (시각적 배지·라벨로 출력 X)
 - [ ] 이미지 생성 전 카피 승인 받음
 - [ ] 제품 사진 있으면 reference로 전달됨
 - [ ] 이미지는 병렬 생성 (순차 X)
