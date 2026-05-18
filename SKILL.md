@@ -65,8 +65,13 @@ description: Use when the user wants to make, plan, write, or generate a Korean-
 ### STEP 1. 제품 사진 분석
 사진 있으면 `Read`로 첫 사진 분석. 분석 항목·품질 검수·재생성 분기 워크플로우는 **`references/photo-quality-check.md`** 참조.
 
-### STEP 2. 인테이크 (한 번에 하나씩)
-8개 질문을 순서대로 묻기. 명시적 선택지 + (추천) 표시. 전체 질문 구조는 **`references/intake-flow.md`** 참조.
+### STEP 2. 인테이크
+사용자 메시지에 `[A] 제품명:` `[B] 제품사진경로:` `[C] 보이스톤:` 형식의 **사전 입력 시트**가 보이면 → 시트 파싱 후 일문일답 전부 건너뛰고 STEP 5로 직행. 자세히는 **`references/pre-intake-sheet.md`** 참조.
+
+시트가 없으면 → 8개 질문을 한 번에 하나씩 순서대로. 명시적 선택지 + (추천) 표시. 전체 질문 구조는 **`references/intake-flow.md`** 참조.
+
+⏩ 빠른 진행을 원하는 사용자에게는 첫 응답에서 사전 입력 시트 옵션을 안내한다:
+> "한 번에 정보를 다 주실 수 있으면 `references/pre-intake-sheet.md` 시트를 채워서 붙여넣어 주세요. 그러면 질문 단계 전부 건너뛰고 바로 카피 작성으로 갑니다."
 
 ### STEP 3. 제품 정보 보충
 사진·이름으로 추론 못한 항목(가격·옵션·USP·타겟)을 추가로 묻는다. 이미 추론한 건 사용자 확인만 받음.
@@ -160,6 +165,7 @@ python scripts/build_gallery.py --plan plan.json --images-dir output --out outpu
 | `data/visual-tones.json` | 카테고리별 비주얼 톤 (한/영) |
 | `data/frameworks.json` | 4 스토리텔링 프레임워크 |
 | `references/intake-flow.md` | 인테이크 8개 질문 구조 |
+| `references/pre-intake-sheet.md` | ⚡ 사전 입력 시트 (일문일답 건너뛰기) |
 | `references/photo-quality-check.md` | 사진 품질 검수 분기 워크플로우 |
 | `references/category-compliance.md` | 카테고리별 식약처·KC·공정위 체크 |
 | `references/parallel-image-generation.md` | 병렬 이미지 생성 패턴 + 환경별 호출법 |
