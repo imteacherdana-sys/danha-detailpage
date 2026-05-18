@@ -4,6 +4,26 @@
 
 스킬이 만드는 산출물 3종의 정확한 형식 규약.
 
+## 🚫 절대 금지 — 커스텀 렌더링 스크립트 생성
+
+호스트 에이전트(Codex)는 제품별로 새 렌더링 스크립트를 만들지 않는다. **반드시 기존 두 스크립트만 사용**:
+
+| 산출물 | 사용할 스크립트 |
+|---|---|
+| `상세페이지_기획서.html` | `python scripts/render_html.py --plan output/plan.json --out output/상세페이지_기획서.html` |
+| `이미지_갤러리.html` + `이미지_전체.zip` | `python scripts/build_gallery.py --plan output/plan.json --images-dir output --out output/이미지_갤러리.html` |
+
+**금지 패턴**:
+- ❌ `scripts/build_waxball_page.py`, `scripts/build_tomato_page.py` 같은 제품별 일회성 스크립트
+- ❌ Python으로 HTML을 직접 string concat해서 출력
+- ❌ Codex 응답 안에 HTML을 인라인으로 작성
+
+**왜?** 매번 새 스크립트 만들면 (1) AIDA 태그가 또 나타나거나, (2) CSS 디자인이 매번 달라지거나, (3) 사용자 로컬 경로가 하드코딩되거나, (4) 한국형 표준 레이아웃이 무너집니다. 기존 두 스크립트는 단아쌤이 검증한 표준이에요.
+
+**스타일 변경이 필요하면** — 기존 `scripts/render_html.py` 또는 `scripts/build_gallery.py` 를 직접 편집하고 모든 사용자가 그 변경의 혜택을 받게 한다.
+
+---
+
 ## 🚫 절대 표시 금지 — AIDA/PAS/TRUST/ACTION 태그 배지
 
 마케팅 스토리텔링 단계(`AIDA-A`, `AIDA-I`, `AIDA-D`, `PAS-P`, `PAS-S`, `TRUST`, `ACTION`)는 **카피 작성을 위한 내부 메타데이터**다. 사용자 눈에 보이는 출력물에는 **배지·라벨·텍스트 형태 모두 절대 표시하지 않는다.**

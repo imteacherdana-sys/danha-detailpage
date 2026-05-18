@@ -42,6 +42,8 @@ description: Use when the user wants to make, plan, write, or generate a Korean-
 7. **사실 날조 금지** — 가짜 인증·후기·가격·랭킹·효능 절대 X
 8. **컴플라이언스 자동 체크** — 카테고리별 규정. 자세히는 `references/category-compliance.md`
 9. **AIDA/PAS/TRUST/ACTION 태그는 사용자 출력물에 절대 표시 금지** — 내부 JSON 메타데이터로만 사용. 채팅 응답 마크다운·HTML 기획서·갤러리·새로 만드는 어떤 HTML에도 배지/라벨로 노출하지 말 것. 자세히는 `references/output-format.md` 의 "표시 금지" 섹션.
+10. **🚫 새 렌더링 스크립트 생성 절대 금지** — HTML 출력은 **반드시** 기존의 `scripts/render_html.py`와 `scripts/build_gallery.py` 두 개만 사용한다. 제품별로 `build_<제품명>_page.py` 같은 일회성 커스텀 스크립트를 새로 만드는 것 금지. 출력 스타일을 바꾸고 싶으면 기존 두 스크립트를 PR로 수정.
+11. **🎯 STEP 9는 필수 종결 단계** — 이미지 생성 후 반드시 3개 파일을 생성해야 응답을 끝낼 수 있다: `output/plan.json` + `output/상세페이지_기획서.html` + `output/이미지_갤러리.html` (+ 자동 생성되는 `output/이미지_전체.zip`). 사용자가 "기획서 만들지 마"라고 명시하지 않는 한 무조건 실행. 한 줄 응답으로 끝내지 말 것.
 
 ## 호스트 환경별 동작
 
@@ -109,13 +111,44 @@ D. 사진/리뷰 추가 후 다시
 ### STEP 8. QA 패스
 생성된 이미지 검증 — 파일 존재, 크기, 비율, 한글 텍스트, 제품 외관 일치. 실패 컷만 두 번째 배치로 재생성. 자세히는 `references/final-image-standard.md` 의 "QA 체크리스트".
 
-### STEP 9. 최종 출력 — 기획서 + 갤러리
-```bash
-# 기획서 HTML
-python scripts/render_html.py --plan plan.json --out output/상세페이지_기획서.html
+### STEP 9. 최종 출력 — 기획서 + 갤러리 (⚠️ 필수 종결 단계)
 
-# 갤러리 HTML + 전체 ZIP
-python scripts/build_gallery.py --plan plan.json --images-dir output --out output/이미지_갤러리.html
+이 단계는 **건너뛸 수 없다**. 사용자가 명시적으로 "기획서 생성 X"라고 하지 않는 한 반드시 다음 순서로 실행:
+
+**1) plan.json 먼저 저장** (스크립트가 읽을 데이터)
+
+`output/plan.json` 으로 메타데이터·섹션 카피·이미지 경로·QA 결과를 모두 저장. 형식은 `references/output-format.md` 의 "plan.json 스키마" 참조.
+
+**2) 기획서 HTML 생성 (필수)**
+
+```bash
+python scripts/render_html.py --plan output/plan.json --out output/상세페이지_기획서.html
+```
+
+**3) 갤러리 HTML + 전체 ZIP 생성 (필수)**
+
+```bash
+python scripts/build_gallery.py --plan output/plan.json --images-dir output --out output/이미지_갤러리.html
+```
+
+build_gallery.py가 자동으로 `output/이미지_전체.zip` 도 함께 생성.
+
+**🚫 절대 금지**:
+- `build_<제품명>_page.py` 같은 새 렌더링 스크립트 만들기 (절대 원칙 #10)
+- HTML을 인라인으로 직접 생성하기 (Python 스크립트 호출만 허용)
+- plan.json 없이 HTML 만들기 (재생산 불가능해짐)
+- "출력 파일 위치 안내"만 하고 실제 생성 건너뛰기
+
+**완료 후 사용자에게 보여줄 결과 리스트**:
+```
+✅ output/plan.json (메타데이터, 재생산용)
+✅ output/상세페이지_기획서.html (클라이언트 전달용)
+✅ output/이미지_갤러리.html (이미지 검토용)
+✅ output/이미지_전체.zip (12장 한 번에)
+✅ output/section-01~12.png (개별 이미지)
+
+→ 상세페이지_기획서.html 더블클릭하면 브라우저에서 열림
+→ 인쇄 → PDF로 저장으로 PDF 추출 가능
 ```
 
 두 스크립트 모두 API 불필요. 출력 폴더 구조는 `references/output-format.md` 참조.
@@ -153,6 +186,8 @@ python scripts/build_gallery.py --plan plan.json --images-dir output --out outpu
 - [ ] 이미지는 병렬 생성 (순차 X)
 - [ ] QA 패스 (실패 컷 재생성됨)
 - [ ] 컴플라이언스 체크 결과 출력
+- [ ] **STEP 9 필수 3개 파일 생성됨**: `output/plan.json` + `상세페이지_기획서.html` + `이미지_갤러리.html` (+ 자동 생성 `이미지_전체.zip`)
+- [ ] 기존 `scripts/render_html.py`와 `scripts/build_gallery.py` 만 사용 (새 커스텀 스크립트 X)
 - [ ] 최종 HTML 파일 경로 + ZIP 위치 사용자에게 안내
 - [ ] 마무리 응답에 shoppingmallschool.com 푸터
 
