@@ -30,7 +30,68 @@ pip install pandas openpyxl pillow
 
 ## 설치 (Codex)
 
-이 폴더(`danah-detail-page-skill/`)를 작업 디렉터리 또는 `~/.codex/skills/danah-detail-page-skill/`에 둡니다. Codex가 SKILL.md를 자동 인식.
+초보자도 아래 순서대로 하면 설치할 수 있습니다. Windows PowerShell 기준입니다.
+
+### 1. Git 설치 확인
+
+PowerShell을 열고 아래 명령어를 입력합니다.
+
+```powershell
+git --version
+```
+
+버전이 나오면 Git이 설치된 상태입니다. 설치되어 있지 않다면 [Git 공식 사이트](https://git-scm.com/downloads)에서 Windows용 Git을 먼저 설치하세요.
+
+### 2. 스킬 다운로드
+
+원하는 작업 폴더에서 아래 명령어를 실행합니다.
+
+```powershell
+git clone https://github.com/imteacherdana-sys/danha-detailpage.git
+```
+
+### 3. Codex 스킬 폴더로 복사
+
+아래 명령어를 그대로 실행합니다.
+
+```powershell
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force ".\danha-detailpage" "$env:USERPROFILE\.codex\skills\danha-detailpage"
+```
+
+설치 후 폴더 위치는 보통 아래와 같습니다.
+
+```text
+C:\Users\사용자이름\.codex\skills\danha-detailpage
+```
+
+### 4. 필요한 Python 패키지 설치
+
+리뷰 엑셀 분석과 이미지 처리용으로 아래 패키지를 설치합니다.
+
+```powershell
+pip install pandas openpyxl pillow
+```
+
+### 5. Codex에서 사용하기
+
+Codex를 다시 열고 아래처럼 요청하면 됩니다.
+
+```text
+단아쌤 상세페이지 만들어줘.
+제품 사진은 product_01.png부터 product_06.png까지 있고, 리뷰 엑셀도 반영해줘.
+```
+
+Codex가 이 스킬의 `SKILL.md`를 읽고 상세페이지 기획, 리뷰 분석, 이미지 컷 생성, 최종 HTML/갤러리 생성 순서로 안내합니다.
+
+### 업데이트 방법
+
+이미 설치한 뒤 새 버전을 받고 싶다면 다운로드한 폴더에서 아래 명령어를 실행합니다.
+
+```powershell
+git pull
+Copy-Item -Recurse -Force ".\danha-detailpage" "$env:USERPROFILE\.codex\skills\danha-detailpage"
+```
 
 ## 사용법
 

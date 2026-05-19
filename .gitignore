@@ -32,6 +32,7 @@ desktop.ini
 # Generated outputs (사용자가 직접 만든 결과물 — 깃에 넣을 필요 없음)
 output/
 generated/
+work_assets/
 plan.json
 reviews.json
 *.png
