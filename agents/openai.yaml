@@ -1,0 +1,3 @@
+display_name: Danah Image-Cut Detail Page
+short_description: Korean ecommerce detail pages as separate image cuts with review analysis and Coupang order rules.
+default_prompt: 리뷰 엑셀, 상품이미지, 상품정보제공고시 자료를 확인한 뒤 10컷/12컷/18컷 상세페이지 기획과 컷별 이미지 생성을 도와줘.
