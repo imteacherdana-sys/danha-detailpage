@@ -46,44 +46,93 @@ danah-image-cut-detail-page/
 
 ## 설치 방법
 
-초보자도 아래 순서대로 진행하면 됩니다. Windows PowerShell 기준입니다.
+GitHub를 처음 쓰는 분은 **ZIP 다운로드 방식**을 추천합니다. Git을 설치하지 않아도 됩니다.
 
-### 1. Git 설치 확인
+### 1. 스킬 ZIP 다운로드
 
-PowerShell에서 아래 명령어를 입력합니다.
+1. 아래 GitHub 주소를 엽니다.
+   [https://github.com/imteacherdana-sys/danha-detailpage](https://github.com/imteacherdana-sys/danha-detailpage)
+2. 초록색 `Code` 버튼을 누릅니다.
+3. `Download ZIP`을 누릅니다.
+4. 내려받은 `danha-detailpage-main.zip` 파일을 찾습니다. 보통 `다운로드` 폴더에 있습니다.
 
-```powershell
-git --version
+### 2. 압축 풀기
+
+압축은 찾기 쉬운 곳에 풀면 됩니다. 예를 들어 `문서` 폴더 아래에 아래처럼 풀어두면 관리하기 쉽습니다.
+
+```text
+C:\Users\사용자이름\Documents\CodexSkills\danha-detailpage-main
 ```
 
-버전이 나오면 Git이 설치된 상태입니다. 설치되어 있지 않다면 [Git 공식 사이트](https://git-scm.com/downloads)에서 Windows용 Git을 먼저 설치하세요.
+압축을 풀었을 때 그 안에 아래 파일이 보이면 정상입니다.
 
-### 2. 스킬 다운로드
-
-원하는 작업 폴더에서 아래 명령어를 실행합니다.
-
-```powershell
-git clone https://github.com/imteacherdana-sys/danha-detailpage.git
+```text
+SKILL.md
+README.md
+references
+scripts
+agents
 ```
 
-### 3. Codex 스킬 폴더로 복사
+### 3. Codex 스킬 폴더에 넣기
 
-Codex에서 이 스킬을 항상 불러오려면 이 단계가 필요합니다.
+Codex가 이 스킬을 자동으로 알아보게 하려면 압축을 푼 폴더를 Codex 스킬 폴더로 복사해야 합니다.
 
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse -Force ".\danha-detailpage" "$env:USERPROFILE\.codex\skills\danah-image-cut-detail-page"
-```
-
-설치 후 폴더 위치는 보통 아래와 같습니다.
+최종 위치는 아래처럼 맞추는 것을 추천합니다.
 
 ```text
 C:\Users\사용자이름\.codex\skills\danah-image-cut-detail-page
 ```
 
-참고: 다운로드한 폴더 안에서만 작업할 때는 복사하지 않아도 됩니다. 하지만 다른 프로젝트에서도 "단아쌤 상세페이지 만들어줘"라고 바로 쓰려면 스킬 폴더에 복사하는 것을 권장합니다.
+가장 쉬운 방법은 파일 탐색기에서 직접 복사하는 것입니다.
 
-### 4. Python 패키지 설치
+1. `danha-detailpage-main` 폴더를 엽니다.
+2. 그 안의 파일과 폴더 전체를 복사합니다.
+3. 아래 폴더를 만듭니다.
+
+```text
+C:\Users\사용자이름\.codex\skills\danah-image-cut-detail-page
+```
+
+4. 만든 폴더 안에 붙여넣습니다.
+
+붙여넣은 뒤 아래처럼 보여야 합니다.
+
+```text
+C:\Users\사용자이름\.codex\skills\danah-image-cut-detail-page\SKILL.md
+C:\Users\사용자이름\.codex\skills\danah-image-cut-detail-page\README.md
+C:\Users\사용자이름\.codex\skills\danah-image-cut-detail-page\references
+C:\Users\사용자이름\.codex\skills\danah-image-cut-detail-page\scripts
+```
+
+### 4. Codex에서 작업할 폴더 만들기
+
+스킬을 설치한 폴더와 실제 상세페이지 작업 폴더는 다르게 쓰는 것이 좋습니다.
+
+예를 들어 제품별 작업 폴더를 이렇게 만듭니다.
+
+```text
+C:\Users\사용자이름\Documents\CodexWork\참외상세페이지
+```
+
+이 작업 폴더 안에 제품 사진, 리뷰 엑셀, 상품정보제공고시 자료를 넣습니다.
+
+```text
+참외상세페이지
+├── product_01.png
+├── product_02.png
+├── reviews.xlsx
+└── 상품정보제공고시.png
+```
+
+그 다음 Codex에서 이 작업 폴더를 열고 요청하면 됩니다.
+
+```text
+단아쌤 상세페이지 만들어줘.
+이 폴더에 있는 제품 사진, 리뷰 엑셀, 상품정보제공고시 자료를 반영해서 12컷으로 만들어줘.
+```
+
+### 5. Python 패키지 설치
 
 리뷰 엑셀 분석 스크립트를 쓰려면 아래 패키지가 필요합니다.
 
@@ -92,6 +141,16 @@ pip install pandas openpyxl
 ```
 
 단순히 Codex가 `SKILL.md`를 읽고 상세페이지 컷 기획을 만드는 용도라면 이 단계는 나중에 해도 됩니다.
+
+## Git을 아는 사용자를 위한 설치
+
+Git을 사용할 줄 안다면 아래 방식으로 받을 수도 있습니다.
+
+```powershell
+git clone https://github.com/imteacherdana-sys/danha-detailpage.git
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force ".\danha-detailpage" "$env:USERPROFILE\.codex\skills\danah-image-cut-detail-page"
+```
 
 ## 사용 방법
 
@@ -112,7 +171,9 @@ Codex에서 아래처럼 요청하세요.
 
 ## 업데이트 방법
 
-이미 설치한 뒤 새 버전을 받고 싶다면 다운로드한 폴더에서 아래 명령어를 실행합니다.
+ZIP으로 설치했다면 새 버전이 필요할 때 GitHub에서 ZIP을 다시 다운로드한 뒤 같은 위치에 덮어씌우면 됩니다.
+
+Git으로 설치했다면 다운로드한 폴더에서 아래 명령어를 실행합니다.
 
 ```powershell
 git pull
