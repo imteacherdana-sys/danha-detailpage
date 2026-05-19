@@ -52,7 +52,7 @@ git clone https://github.com/imteacherdana-sys/danha-detailpage.git
 
 ### 3. Codex 스킬 폴더로 복사
 
-아래 명령어를 그대로 실행합니다.
+Codex에서 이 스킬을 항상 불러오려면 이 단계가 필요합니다. 아래 명령어를 그대로 실행합니다.
 
 ```powershell
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
@@ -65,13 +65,17 @@ Copy-Item -Recurse -Force ".\danha-detailpage" "$env:USERPROFILE\.codex\skills\d
 C:\Users\사용자이름\.codex\skills\danha-detailpage
 ```
 
-### 4. 필요한 Python 패키지 설치
+참고: 다운로드한 `danha-detailpage` 폴더 안에서만 작업할 때는 복사하지 않아도 됩니다. 하지만 다른 프로젝트에서도 "단아쌤 상세페이지 만들어줘"라고 바로 쓰려면 스킬 폴더에 복사하는 것을 권장합니다.
 
-리뷰 엑셀 분석과 이미지 처리용으로 아래 패키지를 설치합니다.
+### 4. Python 패키지 설치
+
+리뷰 엑셀 분석, HTML 갤러리 생성, 이미지 처리 스크립트까지 쓰려면 아래 패키지가 필요합니다.
 
 ```powershell
 pip install pandas openpyxl pillow
 ```
+
+단순히 Codex가 `SKILL.md`를 읽고 상세페이지 기획을 만드는 용도라면 이 단계는 나중에 해도 됩니다.
 
 ### 5. Codex에서 사용하기
 
